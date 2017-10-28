@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+	Repulsor by Happy Indra Wijaya
+    https:github.com/hiwijaya/repulsor
+	Free for personal and commercial use under the MIT license
+-->
+<html>
+<head>
+    <title>Happy Indra Wijaya</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+<div id="container">
+
+    <div id="sidebar">
+        <div id="sidebar-mobile">
+            <div class="menu-title">
+                <h3></h3>
+            </div>
+            <div class="menu-icon" onclick="transformMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+        <div id="sidebar-desktop" class="sidebar-desktop">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="./assets/image/startup.png" alt="logo"/>
+                </div>
+
+                <h2 class="sidebar-title">Happy Indra Wijaya</h2>
+                <h6 class="sidebar-subtitle">
+                    "A software engineer, power forward,<br/>
+                    and street food addicts."
+                </h6>
+
+                <div class="sidebar-menu">
+                    <a href="#">Blog</a>
+                    <span class="separator">&nbsp;</span>
+                    <a href="#" style="padding-right: 0">About</a>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="account-box">
+                    <a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                </div>
+                <div class="credit-box">
+                    <h6>&copy; 2017 Happy Indra Wijaya. All Rights Reserved.</h6>
+                    <h6>Powered by <a href="https://github.com/hiwijaya/repulsor">Repulsor</a>.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="content">
+        <div id="notification" onclick="hideNotification(this)">
+            <label>Welcome..</label>
+            <a href="#">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+        <div class="index">
+            <img src="./assets/image/spacecraft.png" alt="launch">
+        </div>
+        <div id="footer">
+            <h6>
+                <i class="fa fa-code" style="font-weight: bold;"></i> with
+                <i class="fa fa-heart" style="font-size: 0.9em;"></i> by Happy Indra Wijaya
+            </h6>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+    function transformMenu(target) {
+        var s = document.getElementById("sidebar-desktop");
+        if (s.className === "sidebar-desktop") {
+            s.className += " sidebar-responsive";
+            target.classList.toggle("change");
+        }
+        else {
+            s.className = "sidebar-desktop";
+            target.classList.toggle("change");
+        }
+    }
+
+    function hideNotification(target) {
+        target.style.display = "none";
+    }
+</script>
+</body>
+</html>

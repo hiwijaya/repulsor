@@ -1,0 +1,451 @@
+/*
+	Repulsor by Happy Indra Wijaya
+    https:github.com/hiwijaya/repulsor
+	Free for personal and commercial use under the MIT license
+*/
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic');
+
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.0em;
+    font-weight: 400;
+    background-color: #FCFCFC;
+}
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 {
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 1.0em;
+}
+h6 {
+    font-size: 0.8em;
+}
+p {
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #202121;
+}
+ul, ol {
+    margin: 0 0 10px 30px;
+}
+ul {
+    list-style-type: disc;
+}
+li {
+    line-height: 1.5em;
+    padding-bottom: 5px;
+}
+fieldset{
+    display: block;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    font-size: 1em;
+}
+legend {
+    font-weight: 500;
+    padding-right: 10px;
+    margin: 10px 0;
+    color: #999;
+
+}
+input, select, textarea {
+    font-family: 'Maven Pro';
+    padding: 5px;
+    width: 300px;
+    background: transparent;
+    border: 0.5px solid #202121;
+    box-sizing: border-box;
+}
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 7px #627681;
+}
+button {
+    border: none;
+    background-color: #48D6BE;
+    color: #013C3C;
+    display: inline-block;
+    padding: 10px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    outline: none;
+}
+button:hover {
+    color: #fff;
+}
+table {
+    width: 100%;
+    text-align: left;
+}
+th,
+td {
+    padding: 5px 10px;
+}
+th {
+    color: #fff;
+    background-color: #11566B;
+}
+td {
+    font-size: 0.8em;
+    border-bottom: 0.7px solid #e0e0e0;
+}
+blockquote {
+    display: block;
+    border-left: 5px solid #bfbfbf;
+    padding: 10px;
+    font-style: italic;
+    margin-bottom: 15px;
+    height: 1%;
+    font-size: 0.8em;
+    color: grey
+}
+pre code {
+  font: normal 10pt Consolas, Monaco, monospace;
+}
+
+
+.separator {
+    content: '';
+    border-right: 0.7px solid #fff;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+/* scroll */
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #FCFCFC;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* scroll */
+
+
+/* modal-image */
+#modal-image {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+}
+#modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#modal-close:hover {
+    color: #fe5555;
+}
+#modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+}
+#modal-caption {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+#modal-content, #modal-caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+/* modal-image */
+
+
+
+
+/* container */
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+/* container */
+
+/* sidebar */
+#sidebar {
+    width: 600px;
+    /*background-image: linear-gradient(60deg, #001829 0%, #12586d 100%);*/
+    background-image: url('../image/background.png');
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+}
+#sidebar-mobile {
+    display: none;
+}
+.sidebar-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0 25px 0;
+    margin: 0 50px 0 25px;
+    height: 100vh;
+    text-align: right;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.sidebar-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    background-color: #00ECF3;
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.sidebar-logo img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+.sidebar-title {
+    margin-bottom: 5px;
+}
+.sidebar-subtitle {
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+.sidebar-menu {
+    display: flex;
+    justify-content: center;
+}
+.sidebar-menu a {
+    height: 20px;
+    padding: 0 20px;
+    color: #fff;
+}
+.sidebar-menu a:hover {
+    color: #fe5555;
+}
+.sidebar-footer{
+    line-height: 20px;
+}
+.sidebar-footer a {
+    color: #ccc;
+}
+.sidebar-footer .account-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.sidebar-footer .account-box a {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    color: #fff;
+}
+.sidebar-footer .account-box a:hover i {
+    color: #00ECF3;
+}
+/* sidebar */
+
+/* notification */
+#notification {
+    width: 100%;
+    height: 40px;
+    background: #fe5555;
+    color: #3a2424;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+#notification a {
+    color: #3a2424;
+    padding: 5px;
+    border-radius: 5px;
+}
+#notification a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* notification */
+
+
+/* content */
+#content {
+    width: 100%;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #202121;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+/* content */
+
+/* index */
+.index {
+    padding: 20px 20px 0 20px;
+}
+.index img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+/* index */
+
+
+/* blog */
+.blog {
+    padding: 20px 20px 0 20px;
+}
+.blog h1 {
+    font-weight: bold;
+}
+.blog li {
+    line-height: 1.0em;
+}
+.post-item {
+    display: block;
+    margin-bottom: 15px;
+}
+.post-item:hover .post-title{
+    font-weight: 500;
+}
+.post-item .post-title {
+    line-height: 1.0em;
+    margin-bottom: 5px;
+    color: #202121;
+}
+.post-item .post-date {
+    color: #95a5a6;
+}
+/* blog */
+
+
+/* post */
+.post .main-image {
+    width: 100%
+}
+
+.post .article {
+    padding: 20px 20px 0 20px;
+}
+.post .article .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.post .article .date {
+    color: #95a5a6;
+    margin-bottom: 30px;
+}
+.post .article .subtitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* post */
+
+
+/* footer */
+#footer, #footer a {
+    text-align: center;
+    color: #95a5a6;
+    margin: 20px 0;
+}
+/* footer */
+
+
+/* widget */
+.widget {
+    padding: 20px 20px 0 20px;
+}
+.widget img {
+    max-width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.subtitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.field label {
+    float: left;
+    width: 100px;
+}
