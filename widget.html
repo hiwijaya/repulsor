@@ -155,12 +155,12 @@
             <img src="./assets/image/post/smiled.jpg" alt="Smiled :)"
                  onclick="showModalImage(this)"/>
 
-             <div id="footer">
+            <div id="footer">
                 <h6>
                     <i class="fa fa-code" style="font-weight: bold;"></i> with
                     <i class="fa fa-heart" style="font-size: 0.9em;"></i> by Happy Indra Wijaya
                 </h6>
-             </div>
+            </div>
         </div>
 
         <div id="modal-image">
@@ -195,13 +195,14 @@
     var modalClose = document.getElementById("modal-close");
     var modalContent = document.getElementById("modal-content");
     var modalCaption = document.getElementById("modal-caption");
+
     function showModalImage(target) {
         modalImage.style.display = "block";
         modalContent.src = target.src;
         modalCaption.innerHTML = target.alt;
     }
 
-    modalClose.onclick = function() {
+    modalClose.onclick = function () {
         modalImage.style.display = "none";
     };
 
