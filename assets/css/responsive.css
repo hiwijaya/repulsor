@@ -21,14 +21,15 @@
         font-size: 1.1em;
     }
     h5 {
-        font-size: 0.9em;
+        font-size: 1.0em;
     }
     h6 {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     input, select, textarea {
         width: 100%;
     }
+
 
     .hide {
         display: none;
@@ -41,6 +42,73 @@
     /* modal-image */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* index */
+    #header {
+        height: 70px;
+    }
+    #header a {
+        margin-right: 20px;
+    }
+    #index .body {
+        margin: 0 20px;
+    }
+    #index .body .heading {
+        font-size: 1.4em;
+    }
+    #index .footer {
+        justify-content: flex-end;
+        margin: 0 20px;
+    }
+    #index .account-box {
+        width: 150px;
+        display: flex;
+    }
+    #index .line {
+        width: 70px;
+        margin-right: 20px;
+    }
+    /* index */
+
+    /* about */
+    #index .body .about h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    #index .body .about p {
+        max-width: 800px;
+    }
+    /* about */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #container {
         flex-direction: column;
         height: auto;
@@ -49,7 +117,10 @@
     /* sidebar */
     #sidebar {
         width: 100%;
-        background-image: linear-gradient(60deg,  #0B6E88 10%, #05476A 90%);
+        background-image: linear-gradient(60deg,  #95A5A6, #000);
+    }
+    #sidebar-desktop {
+        background: none;
     }
     #sidebar-mobile {
         display: flex;
@@ -62,7 +133,12 @@
         padding: 0 20px;
     }
     .menu-title {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.8em;
         flex: 1;
+        color: #fff;
+    }
+    .menu-title a {
         color: #fff;
     }
     .menu-icon {
@@ -136,14 +212,52 @@
     }
     /* content */
 
-    /* blog */
+    /* notes */
     .post-item:hover .post-title{
         font-weight: 400;
     }
     .post-item:active .post-title{
         font-weight: 500;
     }
-    /* blog */
+    /* notes */
+
+    /* about */
+    .about blockquote {
+        font-size: 1.0em;
+        margin-left: 0;
+    }
+    .about .intro {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .about .photo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    /* note (post) */
+    .post img {
+        max-width: 100%;
+    }
+    /* note (post) */
+
+
+    /* 404 */
+    #page404 .ghost {
+        width: 100px;
+        height: 100px;
+    }
+    #page404 .title {
+        font-size: 2em;
+    }
+    #page404 p {
+        font-size: 0.8em;
+    }
+    #page404 button {
+        font-weight: 500;
+    }
+    /* 404 */
 
 
 }
