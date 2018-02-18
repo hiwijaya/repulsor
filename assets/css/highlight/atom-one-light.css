@@ -19,6 +19,7 @@ hue-6-2: #c18401
 */
 
 .hljs {
+    font: normal 1em monospace;
     display: block;
     overflow-x: auto;
     padding: 0.5em;
