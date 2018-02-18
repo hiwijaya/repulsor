@@ -319,9 +319,10 @@ code {
 }
 #page404 .title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 10em;
+    font-size: 8em;
     font-weight: 900;
     color: #FFF;
+    text-align: center;
 }
 #page404 .subtitle {
     color: #FFF;

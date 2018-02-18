@@ -175,5 +175,11 @@
     }
     /* content */
 
+    /* 404 */
+    #page404 .title {
+        font-size: 3em;
+    }
+    /* 404 */
+
 
 }
