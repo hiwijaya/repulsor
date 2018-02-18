@@ -11,11 +11,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="./assets/css/highlight/atom-one-light.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/highlight/atom-one-dark.css">
+
 
 </head>
 
@@ -23,9 +24,12 @@
 <div id="container">
 
     <div id="sidebar">
+
         <div id="sidebar-mobile">
             <div class="menu-title">
-                <h3></h3>
+                <a href="#">
+                    <h3>hiwijaya</h3>
+                </a>
             </div>
             <div class="menu-icon" onclick="transformMenu(this)">
                 <div class="bar1"></div>
@@ -36,35 +40,43 @@
 
         <div id="sidebar-desktop" class="sidebar-desktop">
             <div class="sidebar-header">
-                <div class="sidebar-logo">
-                    <img src="./assets/image/startup.png" alt="logo"/>
-                </div>
-
-                <h2 class="sidebar-title">Happy Indra Wijaya</h2>
+                <a href="#">
+                    <h2 class="sidebar-title">Happy Indra Wijaya</h2>
+                </a>
                 <h6 class="sidebar-subtitle">
-                    "A software engineer, power forward,<br/>
-                    and street food addicts."
+                    "A full stack guy who can clean out Indomie double </br>under 5 minutes."
                 </h6>
 
                 <div class="sidebar-menu">
-                    <a href="#">Blog</a>
-                    <span class="separator">&nbsp;</span>
-                    <a href="#" style="padding-right: 0">About</a>
+                    <a href="./blog.html">Blog</a>
+                    <span class="separator"></span>
+                    <a href="./about.html">About</a>
                 </div>
             </div>
 
             <div class="sidebar-footer">
                 <div class="account-box">
-                    <a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                    <a href="https://www.github.com/hiwijaya">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/hiwijaya">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hiwijaya/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:wijaya.happyindra@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://t.me/hiwijaya">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-rss" aria-hidden="true"></i></a>
                 </div>
                 <div class="credit-box">
                     <h6>&copy; 2017 Happy Indra Wijaya. All Rights Reserved.</h6>
-                    <h6>Powered by <a href="https://github.com/hiwijaya/repulsor">Repulsor</a>.</h6>
+                    <h6>Powered by <a href="https://github.com/hiwijaya/repulsor">Repulsor</a></h6>
                 </div>
             </div>
         </div>
@@ -79,65 +91,81 @@
             </a>
         </div>
         <div class="post">
-            <img src="./assets/image/post/main-image.png" alt="main-image"
-                 class="main-image"/>
 
-            <div class="article">
-                <h2 class="title">Know More About Lorem Ipsum</h2>
-                <h6 class="date">Posted on 17 September 2017</h6>
+            <h2 class="title">Know More About Lorem Ipsum</h2>
+            <h6 class="date">Posted on 17 September 2017</h6>
 
-                <p>
-                    <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of
-                    Lorem Ipsum.
-                </p>
+            <p>
+                <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.
+                <a href="https://www.lipsum.com/">Lorem Ipsum</a> has been the industry's standard dummy text ever
+                since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with
+                the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+                <img src="./assets/img/lorem-ipsum.jpg" alt="Lorem Ipsum"
+                     onclick="showModalImage(this)"/>
+            </p>
 
-                <h5 class="subtitle">Where does it come from?</h5>
-                <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-                    looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                    and going through the cites of the word in classical literature, discovered the undoubtable
-                    source.
-                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                    (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
-                    theory of ethics,
-                    very popular during the Renaissance. The first line of Lorem Ipsum,
-                    "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                </p>
-                <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
-                    in their exact original form, accompanied by English versions from the 1914 translation by H.
-                    Rackham.
-                </p>
+            <h5 class="subtitle">Where does it come from?</h5>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text.
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                and going through the cites of the word in classical literature, discovered the undoubtable
+                source.
+                <a href="https://www.lipsum.com/">Lorem Ipsum</a> comes from sections 1.10.32 and 1.10.33 of
+                "de Finibus Bonorum et Malorum"
+                (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
+                theory of ethics,
+                very popular during the Renaissance. The first line of Lorem Ipsum,
+                "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+            <p>
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
+                in their exact original form, accompanied by English versions from the 1914 translation by H.
+                Rackham.
+            </p>
+            <pre><code class="python">find = True
+num = 0
+while find:
+    print(num)
+    if num is 7:    # lucky number! lucky number! lucky number! lucky number! lucky number! lucky number! lucky number! lucky number! lucky number!
+        find = False
+        break
+    num += 1</code></pre>
 
-                <h5 class="subtitle">Why do we use it?</h5>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                    normal distribution of letters, as opposed to using 'Content here, content here',
-                    making it look like readable English. Many desktop publishing packages and web page editors
-                    now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
-                    will uncover many web sites still in their infancy. Various versions have evolved over the
-                    years,
-                    sometimes by accident, sometimes on purpose (injected humour and the like).
-                </p>
-            </div>
+            <h5 class="subtitle">Why do we use it?</h5>
+            <p>
+                It is a long established fact <code>this.doSomething()</code> <a href="#">that</a> a reader will be
+                distracted by the readable content of a page
+                when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content here, content here',
+                making it look like readable English. Many desktop publishing packages and web page editors
+                now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                will uncover many web sites still in their infancy. Various versions have evolved over the
+                years,
+                sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
         </div>
         <div id="footer">
             <h6>
-                <i class="fa fa-code" style="font-weight: bold;"></i> with
-                <i class="fa fa-heart" style="font-size: 0.9em;"></i> by Happy Indra Wijaya
+                <i class="fas fa-code"></i> with
+                <i class="fas fa-heart"></i> by Happy Indra Wijaya
             </h6>
         </div>
+
+        <div id="modal-image">
+            <a id="modal-close" href="#"><h2><i class="fas fa-times"></i></h2></a>
+            <img id="modal-content" src=""/>
+            <h4 id="modal-caption"></h4>
+        </div>
     </div>
+
 </div>
 
 <script type="application/javascript" src="./assets/js/highlight/highlight.pack.js"></script>
@@ -160,6 +188,21 @@
     function hideNotification(target) {
         target.style.display = "none";
     }
+
+    var modalImage = document.getElementById("modal-image");
+    var modalClose = document.getElementById("modal-close");
+    var modalContent = document.getElementById("modal-content");
+    var modalCaption = document.getElementById("modal-caption");
+
+    function showModalImage(target) {
+        modalImage.style.display = "block";
+        modalContent.src = target.src;
+        modalCaption.innerHTML = target.alt;
+    }
+
+    modalClose.onclick = function () {
+        modalImage.style.display = "none";
+    };
 </script>
 </body>
 

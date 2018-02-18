@@ -11,19 +11,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/highlight/atom-one-dark.css">
+
 </head>
 
 <body>
 <div id="container">
 
     <div id="sidebar">
+
         <div id="sidebar-mobile">
             <div class="menu-title">
-                <h3></h3>
+                <a href="#">
+                    <h3>hiwijaya</h3>
+                </a>
             </div>
             <div class="menu-icon" onclick="transformMenu(this)">
                 <div class="bar1"></div>
@@ -34,35 +39,44 @@
 
         <div id="sidebar-desktop" class="sidebar-desktop">
             <div class="sidebar-header">
-                <div class="sidebar-logo">
-                    <img src="./assets/image/startup.png" alt="logo"/>
-                </div>
-
-                <h2 class="sidebar-title">Happy Indra Wijaya</h2>
+                <a href="#">
+                    <h2 class="sidebar-title">Happy Indra Wijaya</h2>
+                </a>
                 <h6 class="sidebar-subtitle">
                     "A software engineer, power forward,<br/>
                     and street food addicts."
                 </h6>
 
                 <div class="sidebar-menu">
-                    <a href="#">Blog</a>
-                    <span class="separator">&nbsp;</span>
-                    <a href="#" style="padding-right: 0">About</a>
+                    <a href="./blog.html">Blog</a>
+                    <span class="separator"></span>
+                    <a href="./about.html">About</a>
                 </div>
             </div>
 
             <div class="sidebar-footer">
                 <div class="account-box">
-                    <a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                    <a href="https://www.github.com/hiwijaya">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/hiwijaya">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hiwijaya/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:wijaya.happyindra@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://t.me/hiwijaya">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-rss" aria-hidden="true"></i></a>
                 </div>
                 <div class="credit-box">
                     <h6>&copy; 2017 Happy Indra Wijaya. All Rights Reserved.</h6>
-                    <h6>Powered by <a href="https://github.com/hiwijaya/repulsor">Repulsor</a>.</h6>
+                    <h6>Powered by <a href="https://github.com/hiwijaya/repulsor">Repulsor</a></h6>
                 </div>
             </div>
         </div>
@@ -70,148 +84,54 @@
 
 
     <div id="content">
-        <div id="notification" onclick="hideNotification(this)">
-            <label>Welcome..</label>
-            <a href="#">
-                <i class="fa fa-times"></i>
+
+        <div class="post">
+
+            <h2 class="title">Archive</h2>
+            <hr style="margin-bottom: 20px"/>
+
+            <a href="./post.html" class="post-item">
+                <h3 class="post-title">Struktur Data Python</h3>
+                <h6 class="post-date">09 December 2017</h6>
+                <div class="post-preview">
+                    Struktur data berbicara mengenai suatu cara untuk menyimpan, menyusun, mengelompokkan
+                    dan merepresentasikan suatu data. Struktur data merupakan hal yang sangat penting
+                    dan wajib dikuasai oleh seorang programmer...
+                </div>
             </a>
-        </div>
-        <div class="blog">
-            <h1>Archive</h1>
-            <hr/>
+            <a href="./post.html" class="post-item">
+                <h3 class="post-title">Python Basic</h3>
+                <h6 class="post-date">09 December 2017</h6>
+                <div class="post-preview">
+                    Python merupakan bahasa pemrograman high-level yang berfokus pada tingkat keterbacaan kode,
+                    sehingga kode yang dihasilkan oleh python mudah ditulis dan dimengerti.
+                </div>
+            </a>
+            <a href="#" class="post-item">
+                <h3 class="post-title">Penggunaan Git Dasar</h3>
+                <h6 class="post-date">09 December 2017</h6>
+                <div class="post-preview">
+                    Version control merupakan suatu system yang dapat mencatat setiap perubahan terhadap sebuah file
+                    atau sekumpulan file, sehingga pada suatu saat anda dapat kembali ke salah satu versi
+                    dari file tersebut..
+                </div>
+            </a>
 
-            <ul>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Create Responsive Website</h3>
-                        <h6 class="post-date">10 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Deploy Python Web Application on Amazon Web Service(AWS)</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Python Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Collection API</h3>
-                        <h6 class="post-date">12 August 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Create Responsive Website</h3>
-                        <h6 class="post-date">10 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Deploy Python Web Application on Amazon Web Service(AWS)</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Python Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Collection API</h3>
-                        <h6 class="post-date">12 August 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Create Responsive Website</h3>
-                        <h6 class="post-date">10 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Deploy Python Web Application on Amazon Web Service(AWS)</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Python Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Collection API</h3>
-                        <h6 class="post-date">12 August 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Create Responsive Website</h3>
-                        <h6 class="post-date">10 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">How To Deploy Python Web Application on Amazon Web Service(AWS)</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Python Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Basic</h3>
-                        <h6 class="post-date">18 July 2017</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="post-item">
-                        <h3 class="post-title">Java Collection API</h3>
-                        <h6 class="post-date">12 August 2017</h6>
-                    </a>
-                </li>
-            </ul>
-        </div>
 
+        </div>
         <div id="footer">
             <h6>
-                <i class="fa fa-code" style="font-weight: bold;"></i> with
-                <i class="fa fa-heart" style="font-size: 0.9em;"></i> by Happy Indra Wijaya
+                <i class="fas fa-code"></i> with
+                <i class="fas fa-heart"></i> by Happy Indra Wijaya
             </h6>
         </div>
     </div>
 </div>
+
+<script type="application/javascript" src="./assets/js/highlight/highlight.pack.js"></script>
+<script type="application/javascript">
+    hljs.initHighlightingOnLoad();
+</script>
 <script type="application/javascript">
     function transformMenu(target) {
         var s = document.getElementById("sidebar-desktop");

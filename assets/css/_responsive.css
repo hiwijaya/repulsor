@@ -21,14 +21,35 @@
         font-size: 1.1em;
     }
     h5 {
-        font-size: 0.9em;
+        font-size: 1.0em;
     }
     h6 {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
-    p {
-        line-height: 1.3em;
+    input, select, textarea {
+        width: 100%;
     }
+
+
+    .hide {
+        display: none;
+    }
+
+    /* modal-image */
+    #modal-content {
+        width: 100%;
+    }
+    /* modal-image */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,10 +57,10 @@
 
 
     /* index */
-    #index .header {
+    #header {
         height: 70px;
     }
-    #index .header a {
+    #header a {
         margin-right: 20px;
     }
     #index .body {
@@ -49,14 +70,16 @@
         font-size: 1.4em;
     }
     #index .footer {
+        justify-content: flex-end;
         margin: 0 20px;
+    }
+    #index .account-box {
+        width: 150px;
+        display: flex;
     }
     #index .line {
         width: 70px;
         margin-right: 20px;
-    }
-    #index .account-box {
-        width: 150px;
     }
     /* index */
 
@@ -71,6 +94,21 @@
     }
     /* about */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #container {
         flex-direction: column;
         height: auto;
@@ -79,6 +117,10 @@
     /* sidebar */
     #sidebar {
         width: 100%;
+        background-image: linear-gradient(60deg,  #95A5A6, #000);
+    }
+    #sidebar-desktop {
+        background: none;
     }
     #sidebar-mobile {
         display: flex;
@@ -94,10 +136,10 @@
         font-family: 'Orbitron', sans-serif;
         font-size: 0.8em;
         flex: 1;
-        color: #FFF;
+        color: #fff;
     }
     .menu-title a {
-        color: #FFF;
+        color: #fff;
     }
     .menu-icon {
         display: inline-block;
@@ -106,7 +148,7 @@
     .menu-icon .bar1, .bar2, .bar3 {
         width: 25px;
         height: 2px;
-        background-color: #FFF;
+        background-color: #fff;
         margin: 6px 0;
         transition: 0.4s;
         -webkit-transition: 0.4s;
@@ -137,43 +179,85 @@
         padding: 0 0 0 0;
         margin: 0 20px 0 20px;
         text-align: center;
-        transition: height 0.7s, visibility 0.2s;
-        -webkit-transition: height 0.7s, visibility 0.2s;
-        -moz-transition: height 0.7s, visibility 0.2s;
-        -ms-transition: height 0.7s, visibility 0.2s;
-        -o-transition: height 0.7s, visibility 0.2s;
+        transition: height 0.7s, visibility 0.3s;
+        -webkit-transition: height 0.7s, visibility 0.3s;
+        -moz-transition: height 0.7s, visibility 0.3s;
+        -ms-transition: height 0.7s, visibility 0.3s;
+        -o-transition: height 0.7s, visibility 0.3s;
     }
     .sidebar-responsive {
         visibility: visible;
-        height: 120px;
+        height: 200px;
         padding: 0 0 10px 0;
     }
     .sidebar-header {
         justify-content: center;
         align-items: center
     }
-    .sidebar-title, .sidebar-subtitle, .sidebar-menu .separator,
-    .sidebar-footer .credit-box {
+    .sidebar-logo {
         display: none;
-    }
-    .sidebar-menu {
-        flex-direction: column;
-    }
-    .sidebar-menu a{
-        padding-bottom: 10px;
     }
     .sidebar-footer .account-box {
         justify-content: center;
         margin-bottom: 0;
     }
+    .sidebar-footer .credit-box {
+        display: none;
+    }
     /* sidebar */
-
 
     /* content */
     #content {
         max-height: none;
     }
     /* content */
+
+    /* notes */
+    .post-item:hover .post-title{
+        font-weight: 400;
+    }
+    .post-item:active .post-title{
+        font-weight: 500;
+    }
+    /* notes */
+
+    /* about */
+    .about blockquote {
+        font-size: 1.0em;
+        margin-left: 0;
+    }
+    .about .intro {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .about .photo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    /* note (post) */
+    .post img {
+        max-width: 100%;
+    }
+    /* note (post) */
+
+
+    /* 404 */
+    #page404 .ghost {
+        width: 100px;
+        height: 100px;
+    }
+    #page404 .title {
+        font-size: 2em;
+    }
+    #page404 p {
+        font-size: 0.8em;
+    }
+    #page404 button {
+        font-weight: 500;
+    }
+    /* 404 */
 
 
 }

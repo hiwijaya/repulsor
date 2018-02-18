@@ -23,7 +23,10 @@ hue-6-2: #c18401
     overflow-x: auto;
     padding: 0.5em;
     color: #383a42;
-    background: #e2e8e9;
+    background: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 10px;
 }
 
 .hljs-comment,
