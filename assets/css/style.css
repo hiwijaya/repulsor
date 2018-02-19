@@ -346,19 +346,19 @@ code {
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track {
     width: 5px;
-    height: 5px;
+    height: 2px;
     background-color: transparent;
 }
 ::-webkit-scrollbar,
 ::-webkit-scrollbar {
     width: 5px;
-    height: 5px;
-    background-color: #FCFCFC;
+    height: 2px;
+    background-color: #FFF;
 }
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
     width: 5px;
-    height: 5px;
+    height: 2px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 /* scroll */
