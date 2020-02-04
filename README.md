@@ -1,8 +1,7 @@
 # repulsor
-Versi 1.0
+Version 1.0
 
-Ide utama dari repulsor adalah membuat template web responsive dengan code se-minimal dan se-simple mungkin. 
-Hanya menggunakan HTML5 + CSS3 dan Javascript (tanpa JQuery).
+The main idea behind this template is to make a responsive web with simple codes. It just using  HTML5 + CSS3 and plain Javascript(without JQuery). This template also contains common components that ready to use.
 
 Live demo:
 [https://repulsor.netlify.com/](https://repulsor.netlify.com/)
